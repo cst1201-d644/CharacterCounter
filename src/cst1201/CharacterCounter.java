@@ -6,8 +6,6 @@
 package cst1201;
 
 import java.util.Scanner;
-import java.util.stream.Stream;
-
 /**
  *
  * @author rkhatchadourian
