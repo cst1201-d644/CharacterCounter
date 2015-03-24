@@ -19,11 +19,12 @@ public class CharacterCounter {
 
         Scanner scanner = new Scanner(System.in);
 
-        String inputString = scanner.nextLine();
+        String inputString = scanner.nextLine().toUpperCase();
+        
         System.out.println("Your string was: " + inputString);
 
         System.out.print("Enter a character: ");
-        char inputCharacter = scanner.next().charAt(0);
+        char inputCharacter = scanner.next().toUpperCase().charAt(0);
 
         System.out.println("Your character was: " + inputCharacter);
 
