@@ -6,7 +6,6 @@
 package cst1201;
 
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 /**
  *
@@ -21,9 +20,10 @@ public class CharacterCounter {
 
         String inputString = scanner.nextLine();
         System.out.println("Your string was: " + inputString);
+        inputString = inputString.toLowerCase();
 
         System.out.print("Enter a character: ");
-        char inputCharacter = scanner.next().charAt(0);
+        char inputCharacter = scanner.nextLine().toLowerCase().charAt(0);
 
         System.out.println("Your character was: " + inputCharacter);
 
@@ -33,7 +33,7 @@ public class CharacterCounter {
         //traverse each character in the string.
         while (i < inputString.length()) {
             //if the current character matches the input character.
-            if (inputString.charAt(i) == inputCharacter) {
+            if (inputString.charAt(i) == inputCharacter){
                 characterCount++; //increment a count.
 
                 //TODO: Make the character matching case insensitive.
