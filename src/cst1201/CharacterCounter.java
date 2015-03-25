@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 /**
  *
- * @author rkhatchadourian
+ * @author Francisco Latacela
  */
 public class CharacterCounter {
 
