@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package cst1201;
 
 import java.util.Scanner;
 
 /**
  *
- * @author rkhatchadourian
+ * @author niaz morshed
  */
 public class CharacterCounter {
 
@@ -20,9 +16,13 @@ public class CharacterCounter {
 
         String inputString = scanner.nextLine();
         System.out.println("Your string was: " + inputString);
+        
+        //converting inputString to lowercase
         inputString = inputString.toLowerCase();
 
         System.out.print("Enter a character: ");
+        
+        //converting inputCharacter to lowercase
         char inputCharacter = scanner.nextLine().toLowerCase().charAt(0);
 
         System.out.println("Your character was: " + inputCharacter);
@@ -36,10 +36,7 @@ public class CharacterCounter {
             if (inputString.charAt(i) == inputCharacter){
                 characterCount++; //increment a count.
 
-                //TODO: Make the character matching case insensitive.
-                //For example, "City Tech" and the character 't' should print 2
-                //occurrences.
-                //For homework, due Wednesday evening.
+                
             }
 
             //move to the next character.
