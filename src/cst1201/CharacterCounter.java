@@ -26,16 +26,17 @@ public class CharacterCounter {
         char inputCharacter = scanner.next().charAt(0);
 
         System.out.println("Your character was: " + inputCharacter);
-
+        
         int i = 0; //the index of the current character in inputString.
         int characterCount = 0; //the number of characters found.
-
         //traverse each character in the string.
         while (i < inputString.length()) {
             //if the current character matches the input character.
-            if (inputString.charAt(i) == inputCharacter) {
+           
+            if (inputString.toUpperCase().charAt(i)== inputCharacter || inputString.toLowerCase().charAt(i)== inputCharacter) {
+                
                 characterCount++; //increment a count.
-
+                 
                 //TODO: Make the character matching case insensitive.
                 //For example, "City Tech" and the character 't' should print 2
                 //occurrences.
