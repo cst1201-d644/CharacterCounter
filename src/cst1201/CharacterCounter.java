@@ -6,6 +6,7 @@
 package cst1201;
 
 import java.util.Scanner;
+
 /**
  *
  * @author rkhatchadourian
@@ -25,27 +26,31 @@ public class CharacterCounter {
 
         System.out.println("Your character was: " + inputCharacter);
 
-        int i = 0; //the index of the current character in inputString.
-        int characterCount = 0; //the number of characters found.
-
+        //int i = 0; //the index of the current character in inputString.
+        // int characterCount = 0; //the number of characters found.
         //traverse each character in the string.
-        while (i < inputString.length()) {
-            //if the current character matches the input character.
-            if (inputString.charAt(i) == inputCharacter) {
+        //while (i < inputString.length()) {
+         //if the current character matches the input character.
+         //if (inputString.charAt(i) == inputCharacter) {
+         //characterCount++; //increment a count.
+
+         //TODO: Make the character matching case insensitive.
+         //For example, "City Tech" and the character 't' should print 2
+         //occurrences.
+         //For homework, due Wednesday evening.
+
+         //move to the next character.
+         //i++;
+        
+        int characterCount = 0;
+        
+        for (int i = 0; i < inputString.length(); i++);
+            if (inputString.charAt(i) == inputCharacter){
                 characterCount++; //increment a count.
-
-                //TODO: Make the character matching case insensitive.
-                //For example, "City Tech" and the character 't' should print 2
-                //occurrences.
-                //For homework, due Wednesday evening.
+                //output the final count. 
             }
-
-            //move to the next character.
-            i++;
+                    System.out.println("Found " + characterCount + " "
+                            + inputCharacter + " character(s) in " + inputString + "."); 
         }
-
-        //output the final count. 
-        System.out.println("Found " + characterCount + " "
-                + inputCharacter + " character(s) in " + inputString + ".");
     }
-}
+
