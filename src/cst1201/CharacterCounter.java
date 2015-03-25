@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 /**
  *
- * @author Francisco Latacela
+ * @author Francisco 
  */
 public class CharacterCounter {
 
@@ -27,10 +27,10 @@ public class CharacterCounter {
 
         System.out.println("Your character was: " + inputCharacter);
         
-        int i = 0; //the index of the current character in inputString.
+         //the index of the current character in inputString.
         int characterCount = 0; //the number of characters found.
         //traverse each character in the string.
-        while (i < inputString.length()) {
+        for(int i=0 ; i < inputString.length(); i++) {
             //if the current character matches the input character.
            
             if (inputString.toUpperCase().charAt(i)== inputCharacter || inputString.toLowerCase().charAt(i)== inputCharacter) {
@@ -44,7 +44,7 @@ public class CharacterCounter {
             }
 
             //move to the next character.
-            i++;
+      
         }
 
         //output the final count. 
