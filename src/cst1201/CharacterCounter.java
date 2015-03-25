@@ -27,12 +27,10 @@ public class CharacterCounter {
 
         System.out.println("Your character was: " + inputCharacter);
 
-        
         int characterCount = 0; //the number of characters found.
 
         //traverse each character in the string.
-        for ( int i = 0; i < inputString.length(); i++ ) {
-        //while (i < inputString.length()) {
+        for (int i = 0; i < inputString.length(); i++) {
             //if the current character matches the input character.
             if (inputString.charAt(i) == inputCharacter) {
                 characterCount++; //increment a count.
@@ -42,7 +40,7 @@ public class CharacterCounter {
                 //occurrences.
                 //For homework, due Wednesday evening.
             }
-                      
+
         }
 
         //output the final count. 
