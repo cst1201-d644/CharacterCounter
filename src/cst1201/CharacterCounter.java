@@ -19,11 +19,11 @@ public class CharacterCounter {
 
         Scanner scanner = new Scanner(System.in);
 
-        String inputString = scanner.nextLine();
+        String inputString = scanner.nextLine().toLowerCase();
         System.out.println("Your string was: " + inputString);
 
         System.out.print("Enter a character: ");
-        char inputCharacter = scanner.next().charAt(0);
+        char inputCharacter = scanner.next().toLowerCase().charAt(0);
 
         System.out.println("Your character was: " + inputCharacter);
 
@@ -34,12 +34,7 @@ public class CharacterCounter {
         while (i < inputString.length()) {
             //if the current character matches the input character.
             if (inputString.charAt(i) == inputCharacter) {
-                characterCount++; //increment a count.
-
-                //TODO: Make the character matching case insensitive.
-                //For example, "City Tech" and the character 't' should print 2
-                //occurrences.
-                //For homework, due Wednesday evening.
+                characterCount++; 
             }
 
             //move to the next character.
