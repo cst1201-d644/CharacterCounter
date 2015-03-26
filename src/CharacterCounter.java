@@ -1,16 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package cst1201;
 
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 /**
  *
- * @author rkhatchadourian
+ * @author GKundu
  */
 public class CharacterCounter {
 
@@ -32,20 +25,17 @@ public class CharacterCounter {
 
         //traverse each character in the string.
         while (i < inputString.length()) {
-            //if the current character matches the input character.
-            if (inputString.charAt(i) == inputCharacter) {
+	            //if the current character matches the input character.
+            //TODO: Make the character matching case insensitive.
+            //For example, "City Tech" and the character 't' should print 2
+            //occurrences.
+            //For homework, due Wednesday evening.
+            if (inputString.toLowerCase().charAt(i) == inputCharacter || inputString.toUpperCase().charAt(i) == inputCharacter) {
                 characterCount++; //increment a count.
-
-                //TODO: Make the character matching case insensitive.
-                //For example, "City Tech" and the character 't' should print 2
-                //occurrences.
-                //For homework, due Wednesday evening.
             }
-
             //move to the next character.
             i++;
         }
-
         //output the final count. 
         System.out.println("Found " + characterCount + " "
                 + inputCharacter + " character(s) in " + inputString + ".");
