@@ -10,23 +10,23 @@ import java.util.stream.Stream;
 
 /**
  *
- * @author rkhatchadourian
+ * @author Kenny Tsang
  */
 public class CharacterCounter {
 
     public static void main(String[] args) {
-        System.out.print("Enter a string: ");
-
+        System.out.print("Please enter a string: ");
+        
         Scanner scanner = new Scanner(System.in);
+        
+        String inputString = scanner.nextLine().toUpperCase();
 
-        String inputString = scanner.nextLine();
-        System.out.println("Your string was: " + inputString);
+        System.out.println("Your string is: " + inputString);
 
         System.out.print("Enter a character: ");
-        char inputCharacter = scanner.next().charAt(0);
+        char inputCharacter = scanner.next().toUpperCase().charAt(0);
 
         System.out.println("Your character was: " + inputCharacter);
-
         int i = 0; //the index of the current character in inputString.
         int characterCount = 0; //the number of characters found.
 
@@ -36,18 +36,18 @@ public class CharacterCounter {
             if (inputString.charAt(i) == inputCharacter) {
                 characterCount++; //increment a count.
 
-                //TODO: Make the character matching case insensitive.
-                //For example, "City Tech" and the character 't' should print 2
-                //occurrences.
-                //For homework, due Wednesday evening.
+        //TODO: Make the character matching case insensitive.
+        //For example, "City Tech" and the character 't' should print 2
+        //occurrences.
+        //For homework, due Wednesday evening.
             }
 
-            //move to the next character.
-            i++;
+        //move to the next character.
+        i++;
         }
 
-        //output the final count. 
+        //output the final count.
         System.out.println("Found " + characterCount + " "
-                + inputCharacter + " character(s) in " + inputString + ".");
+            + inputCharacter + " character(s) in " + inputString + ".");
     }
 }
