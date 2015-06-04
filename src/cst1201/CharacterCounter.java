@@ -32,7 +32,7 @@ public class CharacterCounter {
 
         //traverse each character in the string.
         while (i < inputString.length()) {
-            //if the current character matches the input character.
+            //if the current character matches the input character
             if (inputString.charAt(i) == inputCharacter) {
                 characterCount++; //increment a count.
 
